@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* div{
+    outline: 2px solid red;
+} */
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D8A799;
+}
+
+.wrapper{
+    height: 650px;
+    width: 1000px;
+    background: #FFFCFA;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    gap: 135px;
+}
+
+.left-content{
+    height: 97%;
+    width: 35%;
+    background: #D8A799;
+    border-radius: 15px;
+    margin-left: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.left-content img{
+    position: absolute;
+    height: 7.5in;
+    top: 0;
+    left: -100px;
+}
+
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    min-width: 350px;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 90px;
+    color: #3a3a3a;
+}
+.external-signin{
+    font-size: 16px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+.buttons{
+    display: flex;
+    gap: 13px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+button{
+    background: #FFFCFA;
+    border: #ddd 2px solid;
+    padding: 3px 45px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+a, a:visited{
+    color: #133b4f;
+    text-decoration: none;
+    font-weight: 500;
+}
+.bx.bxl-google{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+.bx.bxl-apple{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.line{
+    display: block;
+    height: 2px;
+    background: #f5f2f2;
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 20px;
+}
+
+.email-signin{
+    font-size: 16px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+form, .field{
+    width: 100%;
+}
+
+.field{
+    position: relative;
+    margin: 15px 0;
+}
+
+.field input[type="text"],
+.field input[type="password"]{
+    outline: none;
+    width: 100%;
+    border: 2px solid #f0efef;
+    background-color: #f0efef;
+    padding: 5px 25px;
+    font-weight: 400;
+    border-radius: 10px;
+}
+.bx.bxs-envelope,
+.bx.bxs-lock-alt{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    color: #b6b5b5;
+}
+
+input[type="submit"]{
+    background-color: #D8A799;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    font-weight: 500;
+    border: 2px solid #D8A799;
+    border-radius: 20px;
+}
+
+.signup-link{
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+}
+
+.signup-link span:first-of-type{
+    color: #8f8d8d;
+}
+
+@media screen and (max-width: 700px){
+    .wrapper{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .left-content{
+        width: 400px;
+        height: 100px;
+        border-radius: 100px;
+    }
+
+    .left-content img{
+        top: -20px;
+        left: 55%;
+        transform: translateX(-50%);
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .login-content{
+        margin: 0;
+    }
+
+    .signup-link{
+        position: static;
+    }
+}
